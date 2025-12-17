@@ -1310,12 +1310,15 @@ h3.comment-reply-title:after {
 .portfolio-grid {
   margin-left: -0.5em;
   margin-right: -0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 .portfolio-grid figure {
   width: 33.33333%;
   float: left;
-  padding: 3px;
+  padding: 0;
   margin: 0;
 }
 
@@ -1399,6 +1402,32 @@ h3.comment-reply-title:after {
   width: 20%;
 }
 
+.grid-sizer {
+  width: 33.33333%;
+}
+
+.grid-sizer2 {
+  width: 33.33333%;
+}
+
+.portfolio-grid-wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+.portfolio-column {
+  flex: 1;
+  min-width: 0;
+}
+
+.portfolio-column-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
 .portfolio-grid img {
   position: relative;
   display: block;
@@ -1432,13 +1461,14 @@ h3.comment-reply-title:after {
   z-index: 3;
 }
 
-.dessyy{
+.dessyy {
   height: 80%;
   width: 100%;
 }
 
 .dess {
   height: 21rem;
+  margin-bottom: 2rem;
 }
 
 .desy {
